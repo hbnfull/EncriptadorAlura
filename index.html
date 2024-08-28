@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+    <header>
+        <img src="images/Logo.svg" alt="Logo" class="logo">
+    </header>
+    <main>
+        <section class="section1">
+            <div class="contenedor__CajaTexto">
+                <textarea id="textoEncriptado" class="cajaTexto" placeholder="Ingresa el texto que deseas encriptar o desencriptar."></textarea>
+            </div>
+            <div class="alerta">
+                <img src="images/alerta.svg" alt="Icono de alerta" class="imgAlerta">
+                <p>La salida solo seran letras minúsculas y sin acento</p>
+            </div>
+            <div class="contenedorBotones">
+                <button type="button" id="btnEncriptar" class="btnEncriptar botones">Encriptar</button>
+                <button type="button" id="btnDesencriptar" class="btnDesencriptar botones">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section2">
+            <textarea id="textoResultado" class="textoResultado" rows="9" readonly></textarea>
+            <button type="button" id="btnCopiar" class="btnCopiar botones">Copiar</button>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <div id="popup" class="popup" style="display: none;"></div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
